@@ -1,0 +1,145 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ClickNav" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="546,979" sap2010:WorkflowViewState.IdRef="ClickNav_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ClickNav" sap:VirtualizedContainerService.HintSize="526,879" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="imageExist" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="484,696" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[not imageExist]">
+      <Sequence sap:VirtualizedContainerService.HintSize="418,534" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence sap:VirtualizedContainerService.HintSize="376,351" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click Image 'iexplore.exe Oracle'" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAUCAYAAACXmT/GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUeSURBVGhD7Zl7b1RVFMX9Hn4EP4N/SzQGEYlKfMNHEA1RiVptUkN81DQ2aVIpOEKpWq1ghaIGUPGBKJIYpRUERTp9zZR2WhHj9q7bruuaPefeDtA2MZ4/fplzz9n77HX2WX3c9oaxSs0ikdUkM93Jw0/Zob2bU4Z6N9uB3Y/YYOnhdF4TIpHrJTMdzPb3lXIDAzsejMaLLCsNprs8c7IOmO7lbTdab+dGK3Xcazvb77bulzZY1/b11tm2PhoyctVkphvq3RQEpvLf/ZT2lrUNm0YiRWSmw+9wIVOB+epxm5s8ZjNjh2364iGr/PaBTZ5/18bP9tmLT9/esGkkUkRmusHSgun+mvsx5crsD+mP1/nqN4nhvrDZ8SOp4aqp4d6zibNvWfnnPbZ9WzRdEUOnRuymJ9vTz9D6/5HMdPt2PZSZDob7c+Z7+2P6hM1NwXBH7dLoR1a9MGhT5wdSw40lhisPv2FtT9xWtyGbrGzq7q+L0Ti/tu7VUkP+Y70H7ObWroZ5oLkgVP+F/UezddTTNdQL5Yc0e5qJZQw+Q+shXj9yIs0JrRWBHAV9C8WtBOhjs/Uy0w30PLBguhoMd2rRcF/a7MSnNjP6cWK4DxPDvW8Tv7y9aLiSXfypx1q33lq3YajJMAzQOAiEUD/frHhcdOiyfX0+4yLx7PNQT5/zdIVoJjbUj5VCz8ln/YJbSZq9N5CZrr/7/tR0C4b71uYqX1kNhit/YtXfD9rUr/sSw71jY2f2WnkkMdzpnsR0O+z5x9fUbZjXZFyMNgDPaBA/Od+MeOaF1kL1tYY3nd8rT1eIoljMQQeBHsRgjPqcRyzHPDfjMEbPsBf6ojkhsKY6kKM9x5h7sAchTdo7aOK83ovm3NFe/9MJdTQP6J6Z6fq67ktNd/nSdzZf+Tox3Gep4aZTw+23iXP9Ng7DDb9po6d3poYDz265JdsMhC4dQAQPijU0EmPMcR40Yzrs7y+Z+Pp6gcDX46ViXKTLUxSLMc7BOOqhFhqBRsJYdeqYRuF5kZOnS+O0Lp51TwDt2Jvz1ITeU7vP0f0xVh16b7426zA2M92ezo2p6eYrx602+fnim+rB5E0VhkveVM/0Jd/hEsMN/2s48MyjzZuOh1EDQgwvD/AiFDYEIC+v6YD1FV33+ajNZhXp8hTFYswmaz8wp3pUS14czq57a10PchTsxTWfx9pekz6HcjCHMWJ4RhAyna4rmelKHfekpqtNHlt8Ux2yyoXkTfUc3lT7bGxkd913uGsxHQ8AgWokFajiPf4CQmh9NlC1QAPmiDa1SJenKFbHIT3MQW3Wz4sLmQ61+aywLveiBuDPDTDnNTGXOdTnnxGj+/t7477A31lmOvwReOE/DXfZa213WkfrOnulZW36dzj8WQRvqXhpeC75Ha5ly5rUbMD/R0Kbp/MojAZy3UPBRaZDnB40hK+PvfTQvpFkKV1XE4sxdaoef8GqJS/uWkyHMfK0FvJC5/aa9NnnYBw6Iyi6N7+WmW650OZxDk1jo1DcN00bmye+6FBKXn3m6kUrS+lSmjkDa/DyvZmAalHdGuc1hGoT5HgjcH/uyb7gE3sVafJrun+oFnuMeY65hnPwecVMp/AQQA2g8BAq3q+HYBMJ6+s857CvNlVZSpfOLRWrPcB58Ik5rGHMeNWiujXuekzHOdbgFwDBM2sRrQVQj2t6ZjxrLd3H1/F6l910kf8WavDVYtlNpw6PRBR6JH6ni6w60XSRVaZm/wDAqbBmeJTaoQAAAABJRU5ErkJggg==" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;html title='Oracle Applications Home Page' /&gt;" WaitForReady="INTERACTIVE" />
+            </ui:ClickImage.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ClickImage>
+          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD  favNtfLayout'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:Click.CursorPosition>
+            <ui:Click.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="5255c742296abafb36c1356235e6ddc6" Selector="&lt;html title='Oracle Applications Home Page' /&gt;&lt;webctrl id='mainLayout_internalTable' tag='TABLE' /&gt;&lt;webctrl id='favNtfLayout' tag='TD' /&gt;" WaitForReady="INTERACTIVE" />
+            </ui:Click.Target>
+          </ui:Click>
+          <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+        </Sequence>
+        <ui:ImageFound DisplayName="Image Exists 'iexplore.exe Oracle'" Found="[imageExist]" sap:VirtualizedContainerService.HintSize="376,51" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+          <ui:ImageFound.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAUCAYAAACzrHJDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARUSURBVGhD7Zj7T1xFFMf9f/wb/LWGqI2oSY1Nmxg0ErG0vAqER7EYTB8p7bYI2EJbaUtJNajRH5pGrWiQhEATSTTFtrLlsTwXdSE+WHo632m+23PnXmC3PLbBu8kn954zM2fOnO/M3bv7zPT8ooRsL3yiXvz2P6m/GpfDV+ak7vKM1HZMS/XFmFSej8nBtjEp/fi+HGgekcKmu1IQ+U3yG4fl7eO/ysnPFzxxQrKHT9T6zrjg883dpYzY2/CzJ05I9vCJak/opRmp+WTKnNBJqWifkLJzY1LSGrUndJ85oe+eGpZ3Gm9L3rFf5M0jQ7LHCPpG/S1PnJDs4RP1kBE0mXwgfy89kMS/j5lbXJbYX16i8aQMzyZlKJaUXXUDnjgh2cMnak3HZErQM18tSJMh8mVCTn7xpxz/bF6OXIvLB52z5jTju3ZSytsmZHA8Ka/W9HvihGQPn6hVF2JK1IQ9oeCYERQnE9R1TEluVZ+ltHXMiop7N9aT8FzDWTn69Q+BbSHp4RO1vG08Jeopc0Ip6oddcylRq8ybMEXd/1HUirqzotcTB0CcZ6sjKSCY28dlvaLeGLpj58L1fM+gvQ/qBw52Xffkt1rfrSb39GWbX1DbWvhELTs7Kol/Hn2Hnuj+Q45+GpcGI+hhvDyZx21le8z0GZfillHzsyYq752Oyk/RJXmx7EdPHBYUxaUPiWo7iI08qemIipy0nc7G2wo2VNTilmhKVHx/8kRWX5i0L0WgqPl+6gWpIDJiRc0p7fHEcQu2Wpu2UdS89u7UyeHCeAJ1G3zoT7/uxysJEsvNA5vA7adjaD/G6TaMdTeRa+snF/MFXANAXORFG2S6yX2iFjbds4LGEsv2hYiiVpgXIogICs9E7XXAPHYhas/IkjxffNMThwsKSmgtUXmvBeI9Raa4us29d4vq4uaBmG6xmb/u647DHGuJ6rYxdlAOuMLHtWaKT9SCyJ2UqIfMCxFenMrPTZjfqWOy35zQfUZQCKmBqDsOfOeJA/TOBEEFcm1dSAA/bC2WOwagDYXLVFS0Ey0o49DWsZgT2+BHuzuftjGXjs8NBD/WTD/BHGhz/engEzW/8bYVlL9BCU7m4IQXPHZ7fn/0j1KQqBouEFdXEG1vtaiMgQLreBzrgjY3R/jR351P24jPGIQi6zYKiVx4nyk+UWs64vZfIvztt7v+lrz+/oC8Vtsvr1T3ycuVvfJSea+8YF6Kckq+lx1FN62Y4K3Ge544Qaz0yNG2WzDamy0qwFwsJOOwTfMkoiIuRVwJnfuGirpRYAFYFG0uEAmjICgM23AfJKouil4w7M0QVecIW4sM9MniOI5x52Y/zu/GxpVCax/7P5WichEa+NiOgtGvi6T9egwXzAKkIyr86AMbcdmXuDHo0+NxT9z56MOVeVJIoEUF2KxsA7CDfOir60dfumyaqP8nUHi9YbPNponKXRayfoLquxrhSd2GhKJuOxblIRWNAPJfg3ajAAAAAElFTkSuQmCC" />
+          </ui:ImageFound.Image>
+          <ui:ImageFound.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html title='Oracle Applications Home Page' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+          </ui:ImageFound.Target>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ImageFound>
+      </Sequence>
+    </DoWhile>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[imageExist.ToString]" TopMost="True" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

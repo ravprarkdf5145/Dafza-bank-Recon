@@ -1,0 +1,160 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="438,798" sap2010:WorkflowViewState.IdRef="Sequence_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="418,1508" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="c9f14993d82837bbe1e3fed910275cab" Selector="&lt;html title='Oracle Applications Home Page' /&gt;&lt;webctrl id='header' tag='TABLE' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td' tableRow='4' tag='TD' /&gt;" WaitForReady="INTERACTIVE" />
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="376,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="down" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="376,116" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="down" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+      <ui:SendHotkey.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+      </ui:SendHotkey.Target>
+    </ui:SendHotkey>
+    <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="376,1114" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'iexplore.exe Oracle'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAVCAYAAABcxexjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU1SURBVGhD7Zprb1RVFIb9H/4Ef4OfJRpDEI1KvMNPEI0BiVptUkO81DQ2aVIpMkKpWq1ghaIGUPGCKJIYpRUERTq9zZR2WhHj8rynfY/vrNnnTKllPu0PT86+rL1u++20p+1NE5WaRSKtJBPd6aNP25H9W1JG+rfYob2P2XDp0XRdD0Qi/5dMdBDbP9fKDQztejgKL7KmNIju6tzpOiC6V3bcbP3dm6zUdb/t7rzXel++x3p2brTujo1RkJHrJhPdSP/mIBCV//RTOtvWNziNRIrIRIef4UKiAovVk7YwfcLmJo7a7OUjVvn9Q5u++J5Nnh+wl565s8FpJFJEJrrh0pLo/l74KeXa/I/pt9fF6reJ4L60+cljqeCqqeDet6nzb1v5l322c0cUXeT6yER34M1HMtFBcH/N/WB/zp6yhRkI7rhdGf/YqpeGbebiUCq4iURw5dE91rHtjjqHI2fG7JbtnXVs7h2ss1E7v7fhtVLD+Sf6D9mt7T0N60DPKm8cO5Xu46yuez+h3BRv/+LB40G7ZrBePEP7KwX5aj4AOYZs1xrUrrHQW9yX2qyETHRDfQ8tia4GwZ1ZFtxXNj/1mc2Nf5II7qNEcB/Y1K/vLAuuZJd/7rP2p26vcxhqLhL1jWHCfh1rXigh0PwiwWAPvnxTEE+Fg3lePJzVGBByUcxW0KzuG4kX3WrJRDfY+2AquiXBfWcLla+tBsGVP7XqH4dt5rcDieDetYlz+608lgjubF8iul32wpPr6hzmfUWHLhuXyCfXVyI6ngvtEeYQ+gLQPHCBefFwVnPzwBdsNAZFwXWK3ucCv94GUOhYD4mL/kPrOMM5atR5KFeA2rnOu9BznDN/wnvC08cCmLPPGgPjTHQDPQ+kort65XtbrHyTCO7zVHCzqeAO2tSFQZuE4EbfsvGzu1PBgee23lYXzDeXIBibhT2KxjeRxXAeAv6LxIA9XqT350VX5AtnmWdoj37hT+uBT9phjH3fF42rvopiAt8vBWe5p7HycsVYcwUUWWiuZwF8wjfGWg+eGkPPwC4T3b7uTanoFisnrTb9xfKb6uHkTRWCS95Uzw0kn3CJ4Eb/Exx49vGVi44JYszmaIIANjivIHHuFzWdYF+bzLgAsdQ3G5WH2vvmsUat2eeH2MhBbXzNmiOezD0EfDMfwniM4X1gDXtqg6f2iSA37IfmXkA4y7zVF54c+xiwz0RX6rovFV1t+sTym+qIVS4lb6oX8KY6YBNje+s+4VYjOjYHgVVIsOflFzXdF50HbOjP54M9xsa65tEM5Abo04N11Mg6eQb1aB6+Dp0X1Q+8f4/3XZRrKNZqRad7eOp9alyQiQ6/BF76S8Pd9nrHXdbVvsFebVuf/h4OvxbBWypeGp5PfoZr27ouFRvwf5HQ5uo6EkFieU1g8UVNhx2LyYNN8iA29pmH2vpc89DG5p1biegQl34A/PLyiuoHzUSHGPCtPopy9bHYk9Bc6wc4y7wB7HxtoRiZ6NYKbS7XkAST84kCLSav6c0ug4QuRWMiDkUHYOvzAcjfr2NO3zoGHOOp67BDfN8XXpDa+HEI71/Ji5WXK/oAO64Dfxa2tGkmOthiX/P3MVDzDROdogX7pAjskFBe071PwuaonYoKaCO96ADWtHkEaxrL2+Ac9zDGGmrVelmP5oB1foJ4v7Tn3EMRKIjNC6cdfGCP81CuQP1pDVzj2Pthnpo7BebvhLmQNRddJNKMNRedKjoSCRE/6SItJxMd3kLjfw5HWkEmuvifw5HWULN/Ab66C5gxjzHkAAAAAElFTkSuQmCC" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;html title='Oracle Applications Home Page' /&gt;" WaitForReady="INTERACTIVE" />
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'iexplore.exe Oracle'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKcAAAAUCAYAAADoSC03AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVgSURBVGhD7Zl7b1RVFMX9Hn4EP4N/SzSGIBqV+IaPIBqjErXapIb4qGls0qRSZIRStVrBCkUNoOIDUSQxSisIinSmj5nSTiti3N5123Vds+fcmYbMaNXzxy8zd+9z9l77nNWhU64plasWiaxFMnOePPy4Hdq7JWVscIsd2P2AjRbuT+O6IRL5u8jMCVP+caVYx8iOe6NBI/8Idea8PH+yBpjzhW3X2mDvJiv03Gk7u2+3/udvs77tG623a2M0bqRtZOYcG9wcBObzn6ZKd8f6uqKRSCvIzInfMUPmA0uV47Y4c8zmS4dt7uIhK//8rs2cf8umzg7Zc0/cXFc0EmkFmTlHC8vm/H3xu5QrC9+m/6wvVb5MjPmpLUwdSY1ZSY35tk2ffd2KP+yx7duiOSPtITPnvlfvy8wJY/42/439OnfCFmdhzKN2afJ9q1wYtdnzI6kxS4kxi+O7rOvRm2oKjp2asOse665hc/9wzRpd53MbXirU7X9o8IBd39lXFwe6V3nlyIk0j70a93VC2ghyuhZAt+Yb7f838ez+ow1nbSf0gu+XmXNk4J5lc1ZhzFMrxvzMFqY/svnJDxJjvpcY8x2b/vGNFWMW7OL3A9b5yI01BUONYAig62AaGNHHEfOGCtHMGMihFtA4+uEi9Dmvn+/BC9T9/xUwk94FZ9U17aKpOYf7707NuWzMr2yx/LlVYczih1b55aDN/rQvMeabVjqz14oTiTFPDyTm3GHPPLyupmBeo5Ap8OnGV8ZXY07uC+UINXgtXgfMt1pzAr1EzaMGehH25Ce4j6OGxqjVnwXrax3+wHEP1uhePgPOSt3Yizhiis4FWFvXcC9gL2pknHoJ44Axr0XPQtdl5hzquys15+VLX9tS+YvEmB+nxpxLjbnfps8N2xSMOf6aTZ7emRoTPLX1hqwY4FB41Tguj8KR40EgpgNBcDNzor5eogc51MF7Xw99eWGgUS2vjXA+5v3MqI+ajPv6WldN4bWypq/PdYzrHrzn7LoPfUJaiOoAWgeoZtRALbzHGt2nPXQeree1+PlIZs49vZtScy6Vj1t15pOVb+YHk2/mMGbyzfzMUPKJmRhz/C9jgicfXL05KQ7vdVAdDmuwX8EwzOsh5YE8DwV72Regl9bOuyyQ14v7mOfMvpbvTaBB12Ivauh65Pne1+FZhs4acT0v9MIz0HP2II9aRPuBkGZq5FkDfVZt1Ir3XktoDpCZs9BzR2rO6syxlW/mY1a+kHwzP4dv5kNWmthd84l5NebkRfsD5KDM6bBKswMmepBeD3Lsjbjq8DQyJ+ppHv0QB9RIE+legDWhi1atqMtzwCtrE9T1swH09msxY7Oz0zz6+bW+JoBmf1/U7bXps9fi15LMnPhj+/L//NxqL3fdYj2dG+zFjvXp3zHx5yJ8K8eXn6eT3zE7tq5LTQn8/xDlNYIYiGLewwEbmRPr9FJDqEkU9EaeOnSt10rUfEQPNpQHnAFrQ+bEfp1DNWA9ezCWV4dnqfq5X9cB1R3C51FHZ/OaCdbpfemzaqNWvPe9QnOAzJytItQIQni4EM73RMX6YUle3BMyjPZEH708rPV6NKe1sA+z8ZKYx7NqQz2s5Vn4S9W6/qL4rJpCdbA/dNbQ4ethn+/j8XnfE/1UE/pgDWKc3evRHF65P68X95G2mVPhRQCIomAF63AQOpDPh/ADIYbhNabDo7/PI6YHT6Bbe7GG5jmbrtFa6KU57kdPHwPU6jXibLge4Iy4VvcDrxt5bwhPKE/tNCjm0rqhmNetOcZCvVQzYy03Z+T/Rd6HSStouTn1JyUSuRropfjJGVmzRHNG1ihV+xOqI32oFcjh1gAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;html title='Oracle Applications Home Page' /&gt;" WaitForReady="INTERACTIVE" />
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="down" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
+      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="down" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
+      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="down" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
+      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Send Hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="down" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'iexplore.exe Oracle'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="&lt;html title='Oracle Applications Home Page' /&gt;" WaitForReady="INTERACTIVE" />
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+    </Sequence>
+  </Sequence>
+</Activity>
